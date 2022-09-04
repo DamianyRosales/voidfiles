@@ -197,3 +197,6 @@ gaps outer 25
 
 default_border pixel 1
 hide_edge_borders none
+
+client.focused #f2e5bc #f2e5bc #000000 #f2e5bc
+client.unfocused #282828 #282828 #282828 #282828
