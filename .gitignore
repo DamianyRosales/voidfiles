@@ -1,3 +1,4 @@
+.gitignore
 BraveSoftware/
 dconf/
 glib-2.0/
@@ -10,4 +11,5 @@ neofetch/
 nitrogen/
 pulse/
 fish/
+omf/
 pavucontrol.ini
