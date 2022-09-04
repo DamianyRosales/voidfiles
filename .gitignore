@@ -1,0 +1,13 @@
+BraveSoftware/
+dconf/
+glib-2.0/
+fontconfig/
+font-manager/
+gtk-2.0/
+gtk-3.0/
+htop/
+neofetch/
+nitrogen/
+pulse/
+fish/
+pavucontrol.ini
