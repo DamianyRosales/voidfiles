@@ -188,6 +188,7 @@ bar {
 }
 
 exec "setxkbmap -layout es"
+exec --no-startup-id "xkbcomp -w 0 .config/xkbmap $DISPLAY"
 exec "nitrogen --restore"
 bindsym $mod+b exec "brave-browser-stable"
 bindsym $mod+d exec --no-startup-id rofi -show drun
