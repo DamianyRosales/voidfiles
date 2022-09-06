@@ -1,5 +1,5 @@
 local nvim_lsp = require('lspconfig')
-local language_servers = { 'tsserver', 'pyright', 'gopls', 'graphql', 'bashls', 'clangd', 'cmake', 'dartls', 'dockerls', 'sqlls', 'vuels' }
+local language_servers = { 'tsserver', 'pyright', 'gopls', 'graphql', 'bashls', 'clangd', 'cmake', 'dartls', 'dockerls', 'sqlls', 'vuels', 'solidity_ls' }
 
 -- CSS Language Server---------
 --Enable (broadcasting) snippet capability for completion
