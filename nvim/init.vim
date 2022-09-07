@@ -36,7 +36,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
     Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-    Plug 'honza/vim-snippets'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -76,3 +75,8 @@ set background=dark
 set termguicolors
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
+
+" --> Airline
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#formatter = 'jsformatter'
+    let g:airline_powerline_fonts = 1
