@@ -38,6 +38,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'hrsh7th/vim-vsnip'
     Plug 'hrsh7th/vim-vsnip-integ'
 
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
     Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
     Plug 'nvim-lua/plenary.nvim'
@@ -62,9 +64,12 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Dart related plugins
     Plug 'dart-lang/dart-vim-plugin'
+    Plug 'thosakwe/vim-flutter'
     Plug 'natebosch/vim-lsc'
     Plug 'natebosch/vim-lsc-dart'
 call plug#end()
+
+source $HOME/.config/nvim/coc-config.vim
 
 let g:LanguageClient_serverCommands = {
     \ 'sql': ['sql-language-server', 'up', '--method', 'stdio'],
