@@ -1,0 +1,16 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="2" l="1663417438343" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="1" l="1663417438502" />
+    </e>
+    <e n="WelcomeScreen.RunAndroidSdkManager">
+      <i c="2" l="1663420331982" />
+    </e>
+    <e n="WelcomeScreen.RunDeviceManager">
+      <i c="1" l="1663418939447" />
+    </e>
+  </component>
+</application>
