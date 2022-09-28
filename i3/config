@@ -182,14 +182,15 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	mode hide
-}
+#bar {
+#        status_command i3status
+#	mode hide
+#}
 
 exec "setxkbmap -layout es"
 exec --no-startup-id "xkbcomp -w 0 .config/xkbmap $DISPLAY"
 exec "nitrogen --restore"
+exec_always --no-startup-id "sh ~/.config/polybar/launch.sh"
 bindsym $mod+b exec "brave-browser-stable"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
