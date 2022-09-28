@@ -193,7 +193,7 @@ exec "nitrogen --restore"
 bindsym $mod+b exec "brave-browser-stable"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
-for_window [class="Alacritty"] floating enable
+#for_window [class="Alacritty"] floating enable
 
 gaps inner 25
 gaps outer 25
