@@ -36,4 +36,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'thosakwe/vim-flutter'
     Plug 'natebosch/vim-lsc'
     Plug 'natebosch/vim-lsc-dart'
+    " tpope
+    "Git plugin for vim
+    Plug 'tpope/vim-fugitive'
 call plug#end()

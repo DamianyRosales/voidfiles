@@ -1,4 +1,5 @@
 
+let g:mapleader="\<Space>"
 "remaps
 
 " --> NERDTree
@@ -24,3 +25,11 @@
     nnoremap <C-s> :w<CR>
 " Quit
     nnoremap <C-z> :tabnew<CR>
+
+" TELESCOPE
+
+" Using Lua functions
+    nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+    nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+    nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+    nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
