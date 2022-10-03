@@ -193,7 +193,7 @@ exec "nitrogen --restore"
 exec_always --no-startup-id "sh ~/.config/polybar/launch.sh"
 bindsym $mod+b exec "brave-browser-stable"
 bindsym $mod+d exec --no-startup-id rofi -show drun
-
+# Screenshot binding
 bindsym Print exec "scrot"
 
 #for_window [class="Alacritty"] floating enable
