@@ -14,7 +14,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
     " Theme
     Plug 'sainnhe/gruvbox-material'
-    Plug 'folke/tokyonight.nvim'
+        "Plug 'folke/tokyonight.nvim'
+        "Plug 'chriskempson/base16-vim'
+    Plug 'sainnhe/everforest'
     " Syntax
     Plug 'sheerun/vim-polyglot'
     " File explorer tab
@@ -30,7 +32,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ap/vim-css-color'    
     " Vim float terminal
     Plug 'voldikss/vim-floaterm'
-
+    "Vim current word highlighting
+    Plug 'dominikduda/vim_current_word'
     " Dart related plugins
     Plug 'dart-lang/dart-vim-plugin'
     Plug 'thosakwe/vim-flutter'
