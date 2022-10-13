@@ -12,11 +12,13 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+    Plug 'nvim-telescope/telescope-ui-select.nvim'
     " Theme
     Plug 'sainnhe/gruvbox-material'
         "Plug 'folke/tokyonight.nvim'
         "Plug 'chriskempson/base16-vim'
     Plug 'sainnhe/everforest'
+    Plug 'olimorris/onedarkpro.nvim'
     " Syntax
     Plug 'sheerun/vim-polyglot'
     " File explorer tab
