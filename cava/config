@@ -93,6 +93,12 @@
 # 'sdl' uses the Simple DirectMedia Layer to render in a graphical context.
 ; method = ncurses
 
+# Orientation of the visualization. Can be 'bottom', 'top', 'left' or 'right'.
+# Default is 'bottom'. Other orientations are only supported on sdl and ncruses
+# output. Note: many fonts have weird glyphs for 'top' and 'right' characters,
+# which can make ncurses not look right.
+; orientation = bottom
+
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
 # 'mono' outputs left to right lowest to highest frequencies.
@@ -125,12 +131,21 @@
 ; sdl_x = -1
 ; sdl_y= -1
 
+# set label on bars on the x-axis. Can be 'frequency' or 'none'. Default: 'none'
+# 'frequency' displays the lower cut off frequency of the bar above.
+# Only supported on ncurses and noncurses output.
+; xaxis = none
+
+# enable alacritty synchronized updates. 1 = on, 0 = off
+# removes flickering in alacritty terminal emeulator.
+# defaults to off since the behaviour in other terminal emulators is unknown
+; alacritty_sync = 0
+
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
 # Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
-# ncurses output method and a terminal that can change color definitions such as Gnome-terminal or rxvt.
-# if supported, ncurses mode will be forced on if user defined colors are used.
+# a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # default is to keep current terminal color
 ; background = default
 ; foreground = default
@@ -140,8 +155,8 @@
 ; foreground = '#33cccc'
 
 
-# Gradient mode, only hex defined colors (and thereby ncurses mode) are supported,
-# background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
+# Gradient mode, only hex defined colors are supported,
+# background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
 ; gradient = 0
 ; gradient_count = 8
@@ -188,8 +203,6 @@
 # This one is tricky. You can have as much keys as you want.
 # Remember to uncomment more then one key! More keys = more precision.
 # Look at readme.md on github for further explanations and examples.
-# DEPRECATED as of 0.8.0 can be brought back by popular request, open issue at:
-# https://github.com/karlstav/cava
 ; 1 = 1 # bass
 ; 2 = 1
 ; 3 = 1 # midtone

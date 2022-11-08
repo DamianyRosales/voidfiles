@@ -189,9 +189,10 @@ bindsym $mod+r mode "resize"
 
 exec "setxkbmap -layout es"
 exec --no-startup-id "xkbcomp -w 0 .config/xkbmap $DISPLAY"
+exec_always --no-startup-id "picom"
 exec "nitrogen --restore"
 exec_always --no-startup-id "sh ~/.config/polybar/launch.sh"
-bindsym $mod+b exec "brave-browser-stable"
+bindsym $mod+b exec "brave"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 # Screenshot binding
 bindsym Print exec "scrot"
@@ -211,5 +212,6 @@ gaps bottom 5
 default_border pixel 1
 hide_edge_borders none
 
-client.focused #f2e5bc #f2e5bc #000000 #f2e5bc
+#client.focused #f2e5bc #f2e5bc #000000 #f2e5bc
+client.focused #282828 #282828 #282828 #282828
 client.unfocused #282828 #282828 #282828 #282828

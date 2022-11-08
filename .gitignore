@@ -1,0 +1,16 @@
+BraveSoftware/
+dconf/
+flutter/
+Google/
+gtk-2.0/
+gtk-3.0/
+htop/
+neofetch/
+nitrogen/
+omf/
+fish/
+pavucontrol.ini
+pulse/
+spotify/
+starship.toml
+yay/
