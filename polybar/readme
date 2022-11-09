@@ -1,0 +1,2 @@
+backlight.rules must be in /etc/udev/rules.d/ to give
+permissions.
