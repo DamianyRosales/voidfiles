@@ -1,4 +1,3 @@
-.gitignore
 Android Open Source Project/
 Android\ Open\ Source\ Project/
 BraveSoftware/
@@ -17,5 +16,5 @@ spotify/
 starship.toml
 yay/
 nvim/
-\~/
 fish/
+fish/fish_variables
