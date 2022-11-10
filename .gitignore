@@ -1,3 +1,6 @@
+.gitignore
+Android Open Source Project/
+Android\ Open\ Source\ Project/
 BraveSoftware/
 dconf/
 flutter/
@@ -8,9 +11,11 @@ htop/
 neofetch/
 nitrogen/
 omf/
-fish/
 pavucontrol.ini
 pulse/
 spotify/
 starship.toml
 yay/
+nvim/
+\~/
+fish/
