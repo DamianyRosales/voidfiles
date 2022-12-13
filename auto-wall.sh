@@ -3,5 +3,5 @@ img=(`find ~/images/wallpapers/ -name '*' -exec file {} \; | grep -o -P '^.+: \w
 while true
 do
    feh --bg-scale "${img[$RANDOM % ${#img[@]} ]}"
-sleep 30m
+sleep 10m
 done
