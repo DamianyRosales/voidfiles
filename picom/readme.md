@@ -1,1 +1,1 @@
-## most use yay -S picom-ibhagwan-git
+## most use picom-ibhagwan-git
