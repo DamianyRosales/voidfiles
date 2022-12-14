@@ -1,4 +1,10 @@
-fish/
+fish/completions/
+fish/conf.d/
+fish/fish_plugins
+fish/fish_variables
+fish/functions/
+fish/themes/
+
 glib-2.0/
 htop/
 mimeapps.list
