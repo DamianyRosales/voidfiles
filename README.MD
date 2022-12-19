@@ -9,7 +9,9 @@ This config files are intended to be used on distros that offer minimal installa
 
 # Table of contents
 - [List of core packages](#corepackages)
+- [Fonts](#fonts)
 - [i3wm](#i3)
+- [alacritty](#alacritty)
 
 ## List of core packages <a name="corepackages"></a>
 
@@ -22,9 +24,37 @@ This config files are intended to be used on distros that offer minimal installa
 
 ---
 
+## Fonts <a name="fonts"></a>
+
+Command:
+```bash
+sudo xbps-install font-firacode font-adobe-source-code-pro font-material-design-icons-ttf font-awesome6 font-awesome
+```
+
+1. Fira Code
+```bash
+sudo xbps-install font-firacode
+```
+2. Source Code Pro
+```bash
+sudo xbps-install font-adobe-source-code-pro
+```
+3. Material Design Icons
+```bash
+sudo xbps-install font-material-design-icons-ttf
+```
+4. Font Awesome 6
+```bash
+sudo xbps-install font-awesome6
+```
+5. Font Awesome
+```bash
+sudo xbps-install font-awesome
+```
+
 ## i3 <a name="i3"></a>
 
-```sh
+```bash
 sudo xbps-install i3-gaps i3blocks i3status
 ```
 
@@ -44,4 +74,17 @@ Print exec "scrot"
 ```
 
 All gaps (excluding bottom and top) are set to 25 px.
+Of course, $mod + Enter will open default terminal.
+
+## alacritty <a name="alacritty"></a>
+
+
+```bash
+sudo xbps-install alacritty
+```
+
+The alacritty.yml file from this repository uses the following fonts: Fira Code and Source Code Pro.
+It is prepared with a Gruvbox-Dark theme already and the opacity is set to 0.5.
+Padding is 15px in both X and Y.
+
 
