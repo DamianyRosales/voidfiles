@@ -23,9 +23,9 @@ git clone https://github.com/DamianyRosales/voidfiles.git $HOME/.config/
 - [picom](#picom)
 - [fish](#fish)
 - [miscellaneous](#miscellaneous)
-	[feh](#feh)
-	[Tap Gestures and Natural Scrolling](#gestures)
-	[Caps-lock delay fixing](#caps)
+	- [feh](#feh)
+	- [Tap Gestures and Natural Scrolling](#gestures)
+	- [Caps-lock delay fixing](#caps)
 
 ## List of core packages <a name="corepackages"></a>
 
