@@ -15,12 +15,14 @@ git clone https://github.com/DamianyRosales/voidfiles.git $HOME/.config/
 
 # Table of contents
 - [List of core packages](#corepackages)
-- [Fonts](#fonts)
+- [fonts](#fonts)
 - [i3wm](#i3)
 - [alacritty](#alacritty)
 - [polybar](#polybar)
 - [rofi](#rofi)
 - [picom](#picom)
+- [fish](#fish)
+- [miscellaneous](#miscellaneous)
 
 ## List of core packages <a name="corepackages"></a>
 
@@ -34,7 +36,7 @@ git clone https://github.com/DamianyRosales/voidfiles.git $HOME/.config/
 ---
 
 
-## Fonts <a name="fonts"></a>
+## fonts <a name="fonts"></a>
 
 Command:
 ```bash
@@ -130,6 +132,7 @@ xbps-install rofi
 
 No further settings are needed for ```rofi``` it works out of the box along with i3. Be sure to have the ```config.rasi``` in the proper ```$HOME/.config/rofi/``` folder.
 
+
 # picom <a name="picom"></a>
 
 For rounded corners and dual_kawase blur on all backends, <a href="https://github.com/ibhagwan/picom">ibhagwan picom fork</a> is needed.
@@ -169,4 +172,54 @@ sudo xbps-install --repository=hostdir/binpkgs picom-ibhagwan
 
 **Note #2:** before installing the package make sure to remove all other `compton|picom` packages with `sudo xbps-remove picom compton`.
 
-*INSTRUCIONS COPIED DIRECTLY FROM <a href="https://github.com/ibhagwan/picom-ibhagwan-template/blob/master/README.md">OFFICIAL README</a>
+*INSTRUCIONS COPIED DIRECTLY FROM <a href="https://github.com/ibhagwan/picom-ibhagwan-template/blob/master/README.md">OFFICIAL README</a>*
+
+
+# fish <a name="fish"></a>
+
+```bash
+xbps-install fish-shell
+```
+
+```fish``` should work out of the box with the config.fish copied into ```$HOME/.config/fish/```.
+
+To switch the default shell, follow the tutorial from the <a href="https://fishshell.com/docs/3.0/tutorial.html#tut_switching_to_fish">official documentation</a>
+
+
+# miscellaneous <a name="miscellaneous"></a>
+
+### feh <a name="feh"></a>
+
+```bash
+xbps-install feh
+```
+
+For image viewer, ```feh``` is the perfect package.
+
+Desktop wallpaper can be set to change automatically every 10 minutes (or any number) with the ```auto-wall.sh``` script copied into ```$HOME/.config/```.
+It is set to automatically load on i3's startup.
+
+### Tap Gestures and Natural Scrolling <a name="gestures"></a>
+
+For natural scrolling and on-tap gestures on the touchpad, you need the ```xf86-input-libinput``` package.
+
+```bash
+xbps-install xf86-input-libinput
+```
+
+Also, the ```30-touchpad.conf``` file must be in the ```/etc/X11/xorg.conf.d``` folder.
+
+*30-touchpad.conf*
+```bash
+Section "Inputclass"
+	Identifier "devname"
+	Driver "libinput"
+	Option "Tapping" "on"
+	Option "NaturalScrolling" "true"
+EndSection
+```
+
+
+### Caps-lock delay <a name="caps"></a>
+
+The file ```xkbmap``` must be in the ```$HOME/.config/``` folder and it will be loaded on i3's startup.
