@@ -213,7 +213,7 @@ xbps-install xf86-input-libinput
 Also, the ```30-touchpad.conf``` file must be in the ```/etc/X11/xorg.conf.d``` folder.
 
 *30-touchpad.conf*
-```bash
+```sh
 Section "Inputclass"
 	Identifier "devname"
 	Driver "libinput"
