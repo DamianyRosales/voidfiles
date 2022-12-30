@@ -197,11 +197,8 @@ bindsym $mod+b exec "firefox"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 # Screenshot binding
 bindsym Print exec "scrot"
-# Opening neovim with specific alacritty instance
-bindsym $mod+n exec "alacritty --class nvim --config-file $HOME/.config/alacritty/alacritty-nvim.yml -e nvim $HOME/programming"
 
 for_window [class="Alacritty"] floating enable
-for_window [class="nvim"] floating disable
 
 gaps right 25
 #gaps bottom 15
