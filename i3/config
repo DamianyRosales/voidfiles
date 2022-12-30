@@ -197,6 +197,8 @@ bindsym $mod+b exec "firefox"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 # Screenshot binding
 bindsym Print exec "scrot"
+# Opening neovim with specific alacritty instance
+bindsym $mod+n exec "alacritty --config-file $HOME/.config/alacritty/alacritty-nvim.yml -e nvim"
 
 for_window [class="Alacritty"] floating enable
 
